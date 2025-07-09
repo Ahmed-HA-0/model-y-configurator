@@ -95,17 +95,17 @@ function updatePaymentBreakDown() {
 }
 
 const exteriorImgs = {
-  Stealth_Gray: '../public/images/model-y-stealth-grey.jpg',
-  Pearl_White: '../public/images/model-y-pearl-white.jpg',
-  Deep_Blue: '../public/images/model-y-deep-blue-metallic.jpg',
-  Dark: '../public/images/model-y-solid-black.jpg',
-  Ultra_Red: '../public/images/model-y-ultra-red.jpg',
-  Quick_Silver: '../public/images/model-y-quicksilver.jpg',
+  Stealth_Gray: '/images/model-y-stealth-grey.jpg',
+  Pearl_White: '/images/model-y-pearl-white.jpg',
+  Deep_Blue: '/images/model-y-deep-blue-metallic.jpg',
+  Dark: '/images/model-y-solid-black.jpg',
+  Ultra_Red: '/images/model-y-ultra-red.jpg',
+  Quick_Silver: '/images/model-y-quicksilver.jpg',
 };
 
 const interiorImgs = {
-  Dark: '../public/images/model-y-interior-dark.jpg',
-  light: '../public/images/model-y-interior-light.jpg',
+  Dark: '/images/model-y-interior-dark.jpg',
+  light: '/images/model-y-interior-light.jpg',
 };
 
 function handleScroll() {
