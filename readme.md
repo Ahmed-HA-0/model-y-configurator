@@ -12,7 +12,7 @@ A fully interactive **Tesla Model Y configurator** built using **Vanilla JavaScr
 
 ## 📸 Screenshot
 
-![Model Y Configurator Screenshot](preview-screenshot.png)
+![Model Y Configurator Screenshot](./public/images/preview-screenshot.png)
 
 ---
 
