@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <script type="module" defer src="/src/main.js"></script>
+    <title>Tesla Homepage</title>
+  </head>
+  <body>
+    <div
+      id="top-bar"
+      class="bg-gray-100 fixed z-10 top-0 right-0 left-0 w-full p-4 text-center transition-all duration-500"
+    >
+      <p class="font-semibold">
+        0% APR available for qualified buyers.
+        <a class="underline" href="#">Learn more</a>
+      </p>
+    </div>
+
+    <!-- Header -->
+    <header id="header" class="pt-24">
+      <!-- Container -->
+      <div class="container mx-auto">
+        <!-- flex-container -->
+        <div
+          class="flex flex-row items-center justify-between px-8 md:px-10 lg:px-2"
+        >
+          <!-- left side -->
+          <div>
+            <img
+              class="w-30 object-cover"
+              src="./public/images/logo.svg"
+              alt="Tesla"
+            />
+          </div>
+          <!-- right side -->
+          <div class="cursor-pointer">
+            <button>
+              <i class="fa-solid fa-globe"></i>
+              <span class="font-bold">US</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="mt-12 py-3 px-3">
+      <!-- Container -->
+      <div class="px-0 container mx-auto">
+        <!-- Flex-container -->
+        <div
+          class="flex flex-col justify-between md:items-start md:flex-row w-full"
+        >
+          <!-- left side -->
+          <section class="md:w-3/4">
+            <div class="sticky top-24">
+              <!-- img exterior -->
+              <div
+                class="h-92 overflow-hidden bg-gray-200 flex items-center justify-center"
+              >
+                <img
+                  src="./public/images/model-y-stealth-grey.jpg"
+                  alt="Model-Y"
+                  id="exterior-img"
+                  class="w-full scale-125"
+                />
+              </div>
+
+              <!-- img-interior -->
+              <div
+                class="h-92 w-full overflow-hidden flex justify-center items-center bg-gray-200"
+              >
+                <img
+                  src="./public/images/model-y-interior-dark.jpg"
+                  alt="Model-Y-interior"
+                  id="interior-img"
+                  class="max-w-2xl w-full h-auto scale-125"
+                />
+              </div>
+            </div>
+          </section>
+
+          <!-- aside right -->
+          <aside class="md:w-1/2 mt-8 md:pl-8">
+            <!-- Container -->
+            <div class="container mx-auto px-0">
+              <!-- title -->
+              <h1 class="text-5xl font-bold text-center mb-5">Model Y</h1>
+              <!-- description -->
+              <p class="text-xl text-center mb-10">Customize Your Car</p>
+              <!-- Exterior color -->
+              <div id="exterior-buttons">
+                <h3 class="capitalize mb-2 font-semibold text-base">
+                  exterior color
+                </h3>
+                <!-- color-buttons -->
+                <div class="flex flex-row justify-center space-x-5">
+                  <!-- color-1 -->
+                  <button
+                    class="transition duration-200 hover:scale-110 cursor-pointer btn-selected"
+                  >
+                    <img
+                      class="w-22 md:w-20"
+                      src="./public/images/button-stealth-grey.avif"
+                      alt="Stealth_Gray"
+                    />
+                  </button>
+                  <!-- color-2 -->
+                  <button
+                    class="transition-transform duration-200 hover:scale-110 cursor-pointer"
+                  >
+                    <img
+                      class="w-22 md:w-20"
+                      src="./public/images/button-pearl-white.avif"
+                      alt="Pearl_White"
+                    />
+                  </button>
+                  <!-- color-3 -->
+                  <button
+                    class="transition duration-200 hover:scale-110 cursor-pointer"
+                  >
+                    <img
+                      class="w-22 md:w-20"
+                      src="./public/images/button-deep-blue-metallic.avif"
+                      alt="Deep_Blue"
+                    />
+                  </button>
+                  <!-- color-4 -->
+                  <button
+                    class="transition duration-200 hover:scale-110 cursor-pointer"
+                  >
+                    <img
+                      class="w-22 md:w-20"
+                      src="./public/images/button-dark.avif"
+                      alt="Dark"
+                    />
+                  </button>
+                  <!-- color-5 -->
+                  <button
+                    class="transition duration-200 hover:scale-110 cursor-pointer"
+                  >
+                    <img
+                      class="w-22 md:w-20"
+                      src="./public/images/button-ultra-red.avif"
+                      alt="Ultra_Red"
+                    />
+                  </button>
+                  <!-- color-6 -->
+                  <button
+                    class="transition duration-200 hover:scale-110 cursor-pointer"
+                  >
+                    <img
+                      class="w-22 md:w-20"
+                      src="./public/images/button-quicksilver.avif"
+                      alt="Quick_Silver"
+                    />
+                  </button>
+                </div>
+              </div>
+              <!-- Interior colors -->
+              <div id="interior-buttons" class="mt-12 md:mt-6">
+                <h3 class="capitalize mb-2 font-semibold text-base">
+                  interior color
+                </h3>
+                <!-- color-buttons -->
+                <div class="flex flex-row space-x-5">
+                  <!-- color-1 -->
+                  <button
+                    class="transition duration-200 hover:scale-110 cursor-pointer btn-selected"
+                  >
+                    <img
+                      class="w-12"
+                      src="./public/images/button-dark.avif"
+                      alt="Dark"
+                    />
+                  </button>
+                  <!-- color-2 -->
+                  <button
+                    class="transition duration-200 hover:scale-110 cursor-pointer"
+                  >
+                    <img
+                      class="w-12"
+                      src="./public/images/button-light.avif"
+                      alt="light"
+                    />
+                  </button>
+                </div>
+              </div>
+              <!-- Wheels Buttons -->
+              <div class="mt-8" id="wheels-buttons">
+                <h2 class="font-semibold mb-1">Wheels</h2>
+                <!-- Standard wheels -->
+                <button
+                  id="standard-wheels"
+                  class="bg-gray-700 text-white rounded-lg w-full py-4 text-base capitalize cursor-pointer hover:opacity-85 transition-all duration-300"
+                >
+                  standard wheels
+                </button>
+                <!-- Preformance wheels -->
+                <button
+                  id="preformance-wheels"
+                  class="bg-gray-200 text-black rounded-lg w-full py-4 text-base capitalize cursor-pointer hover:bg-gray-600 hover:text-white transition-all duration-300 mt-2"
+                >
+                  Performance Wheels (+2,500)
+                </button>
+              </div>
+              <!-- self-driving -->
+              <div class="shadow rounded-lg border border-gray-200 mt-8 p-4">
+                <h2 class="font-semibold capitalize mb-2">full self-driving</h2>
+                <!-- add self drive container -->
+                <div class="flex flex-row space-x-2 items-center justify-start">
+                  <input type="checkbox" id="full-self-drive" class="w-5 h-5" />
+                  <label for="full-self-drive"
+                    >Add Full Self-Driving for $8,500</label
+                  >
+                </div>
+              </div>
+              <!-- Preformance Package -->
+              <div class="mt-10">
+                <h2 class="capitalize font-semibold text-base mb-1.5">
+                  preformance package
+                </h2>
+                <button
+                  id="preformance-package"
+                  class="capitalize bg-gray-300 w-full text-center py-4 rounded-lg cursor-pointer hover:bg-gray-400 transition duration-300"
+                >
+                  preformance upgrade (+5,000)
+                </button>
+              </div>
+
+              <!-- Accessories -->
+              <div id="accessories" class="mt-10">
+                <h2 class="font-semibold mb-1.5">Accessories</h2>
+                <!-- three checks container -->
+                <div class="flex flex-col justify-center space-y-4">
+                  <!-- check 1 -->
+                  <label
+                    for="center-trays"
+                    class="flex flex-row justify-between items-center shadow border rounded-lg p-4 border-gray-200"
+                  >
+                    <span>Center Console Trays</span>
+                    <div class="flex flex-row justify-center items-center">
+                      <input
+                        type="checkbox"
+                        name="center-trays"
+                        id="center-trays"
+                        class="w-5 h-5 accessory-form-checkbox"
+                      />
+                      <span class="ml-2">$35</span>
+                    </div>
+                  </label>
+                  <!-- check 2 -->
+                  <label
+                    for="sunshade"
+                    class="flex flex-row justify-between items-center shadow border rounded-lg p-4 border-gray-200"
+                  >
+                    <span>Sunshade</span>
+                    <div class="flex flex-row justify-center items-center">
+                      <input
+                        type="checkbox"
+                        name="sunshade"
+                        id="sunshade"
+                        class="w-5 h-5 accessory-form-checkbox"
+                      />
+                      <span class="ml-2">$105</span>
+                    </div>
+                  </label>
+                  <!-- check 3 -->
+                  <label
+                    for="weather-interior"
+                    class="flex flex-row justify-between items-center shadow border rounded-lg p-4 border-gray-200"
+                  >
+                    <span>All-Weather Interior Liners</span>
+                    <div class="flex flex-row justify-center items-center">
+                      <input
+                        type="checkbox"
+                        name="weather-interior"
+                        id="weather-interior"
+                        class="w-5 h-5 accessory-form-checkbox"
+                      />
+                      <span class="ml-2">$225</span>
+                    </div>
+                  </label>
+                </div>
+              </div>
+              <!-- Total price -->
+              <div class="mt-16 pb-6">
+                <h3 class="capitalize text-xl font-semibold">total price</h3>
+                <span class="font-bold text-2xl" id="total">$52,490</span>
+              </div>
+
+              <!-- Estimated payment -->
+              <div class="border-t border-t-gray-300 py-4">
+                <h3 class="text-lg font-semibold mb-4">
+                  Estimated Payment Breakdown
+                </h3>
+                <p>
+                  Down Payment:
+                  <span id="down-payment" class="font-bold">$5,249</span>
+                </p>
+                <p>
+                  Loan Term
+                  <span id="loan-term" class="font-bold">60 months</span>
+                </p>
+                <p>
+                  Down Payment:
+                  <span id="interest-rate" class="font-bold mb-3">3% APR</span>
+                </p>
+                <p>
+                  Estimated Monthly Payment:
+                  <span id="monthly-payment" class="font-bold text-2xl"
+                    >$848.86</span
+                  >
+                </p>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
